@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Café Le Délice</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Café Le Délice</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Bienvenue au Café Le Délice</h2>
+        <p>Découvrez notre ambiance chaleureuse et nos spécialités artisanales.</p>
+        <a href="#menu" class="btn">Voir le menu</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>À propos</h2>
+        <p>
+            Le Café Le Délice est un lieu de rencontre convivial offrant des cafés de
+            qualité, des pâtisseries maison, et un service chaleureux. Notre passion
+            pour le café se reflète dans chaque tasse.
+        </p>
+        <img src="images/cafe-interior.jpg" alt="Intérieur du café" class="section-image"/>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Notre Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/espresso.jpg" alt="Espresso" />
+                <h3>Espresso</h3>
+                <p>Un espresso intense et aromatique pour les amateurs de café.</p>
+                <span>3,00€</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/cappuccino.jpg" alt="Cappuccino" />
+                <h3>Cappuccino</h3>
+                <p>Mélange équilibré de café, lait chaud et mousse légère.</p>
+                <span>4,00€</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/cheesecake.jpg" alt="Cheesecake" />
+                <h3>Cheesecake Maison</h3>
+                <p>Délicieux cheesecake préparé quotidiennement avec des ingrédients frais.</p>
+                <span>5,50€</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Nos Services</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Café sur place</h3>
+                <p>Profitez d'un moment convivial dans notre espace confortable.</p>
+            </div>
+            <div class="card">
+                <h3>À emporter</h3>
+                <p>Commandez votre café préféré à emporter rapidement.</p>
+            </div>
+            <div class="card">
+                <h3>Catering & Événements</h3>
+                <p>Service traiteur pour vos événements privés et professionnels.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Votre nom" required />
+            <input type="email" placeholder="Votre email" required />
+            <textarea placeholder="Votre message" required></textarea>
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Café Le Délice - Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
